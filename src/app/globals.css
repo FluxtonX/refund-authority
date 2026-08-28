@@ -1,0 +1,60 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-figtree), "Figtree", "Poppins", system-ui, -apple-system, sans-serif;
+  --font-poppins: var(--font-poppins), "Poppins", system-ui, -apple-system, sans-serif;
+  --font-figtree: var(--font-figtree), "Figtree", system-ui, -apple-system, sans-serif;
+
+  --color-primary: #003366;
+  --color-refund-blue: #00509E;
+  --color-refund-dark: #101828;
+  --color-accent: #FFCC00;
+  --color-accent-gold: #FFCD26;
+  --color-bg-accent: #F0F4F8;
+}
+
+@layer base {
+  :root {
+    --primary: #003366;
+    --primary-hover: #002244;
+    --refund-blue: #00509E;
+    --secondary: #101828;
+    --accent: #FFCC00;
+    --accent-gold: #FFCD26;
+    --card-accent: #F0F4F8;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-figtree), 'Figtree', 'Poppins', system-ui, sans-serif;
+  }
+
+  body {
+    background-color: #F9FAFB;
+    color: #101828;
+    font-family: var(--font-figtree), 'Figtree', 'Poppins', system-ui, sans-serif;
+    overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-figtree), 'Figtree', 'Poppins', system-ui, sans-serif;
+    font-weight: 600;
+  }
+
+  button, input, select, textarea, a, span, p {
+    font-family: var(--font-figtree), 'Figtree', 'Poppins', system-ui, sans-serif;
+  }
+}
+
+.shadow-card-elevate {
+  box-shadow: 0 4px 20px rgba(0, 80, 158, 0.08);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.glass-nav {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}

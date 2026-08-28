@@ -1,0 +1,106 @@
+[
+  {
+    "id": "member-1",
+    "name": "Michael Hier",
+    "role": "General Counsel , Legal Department",
+    "bio": "Oversees all legal aspects of the recovery process, ensuring strict adherence to legal frameworks to protect client interests.",
+    "email": "michael.hier@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM.webp"
+  },
+  {
+    "id": "member-2",
+    "name": "Sophie Leblanc",
+    "role": "Blockchain Investigator, , Investigations Department",
+    "bio": "Specializes in tracing fund movements across complex blockchain networks to uncover critical paths for asset recovery.",
+    "email": "sophie.leblanc@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-1.webp"
+  },
+  {
+    "id": "member-3",
+    "name": "David Chen",
+    "role": "IT Director, Information Technology",
+    "bio": "Leads the IT infrastructure and security strategy, ensuring all client data and internal systems are protected with enterprise-grade protocols.",
+    "email": "david.chen@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-8.webp"
+  },
+  {
+    "id": "member-4",
+    "name": "Ryan O&#039;Connor",
+    "role": "IT Support Specialist, Information Technology",
+    "bio": "Provides technical assistance to team members, ensuring smooth operation of all hardware and software used in the recovery process.",
+    "email": "ryan.oconnor@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-11.webp"
+  },
+  {
+    "id": "member-5",
+    "name": "Narain Al-Rashid",
+    "role": "Database Administrator, Information Technology",
+    "bio": "Manages the complex data architecture that stores and organizes blockchain transaction records for investigator access.",
+    "email": "narain.al-rashid@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-12.webp"
+  },
+  {
+    "id": "member-6",
+    "name": "Monica Patel",
+    "role": "Senior Software Engineer, Information Technology",
+    "bio": "Develops and maintains the secure case management platform that allows the team to track recovery cases efficiently.",
+    "email": "monica.patel@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-9.webp"
+  },
+  {
+    "id": "member-7",
+    "name": "Lisa Kim",
+    "role": "UX/UI Designer, Information Technology",
+    "bio": "Designs client-facing interfaces and internal tools to make the recovery process intuitive and easy to navigate for both staff and...",
+    "email": "lisa.kim@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-10.webp"
+  },
+  {
+    "id": "member-8",
+    "name": "Erica Roberts",
+    "role": "Client Support Specialist, Client Services",
+    "bio": "Works directly with clients to develop and execute effective strategies for navigating the recovery process and reclaiming lost assets.",
+    "email": "erica.roberts@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-2.webp"
+  },
+  {
+    "id": "member-9",
+    "name": "Alex Bennet",
+    "role": "Client Support Specialist, Client Services",
+    "bio": "Provides empathetic support, helping clients understand each step of the process with clarity and reassurance.",
+    "email": "alex.bennet@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-6.webp"
+  },
+  {
+    "id": "member-10",
+    "name": "Stacy Wellington",
+    "role": "Client Support Specialist, Client Services",
+    "bio": "Focuses on recovering funds from investment and romance scams by combining detailed investigative work with compassionate client support.",
+    "email": "stacy.wellington@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-14.png"
+  },
+  {
+    "id": "member-11",
+    "name": "Chiara Cerrato",
+    "role": "Client Support Specialist, Client Services",
+    "bio": "Utilizes advanced blockchain analysis to uncover crucial data, supporting the team's efforts to track and recover misappropriated cryptocurrency.",
+    "email": "chiara.cerrato@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-5.webp"
+  },
+  {
+    "id": "member-12",
+    "name": "Jessie Armour",
+    "role": "Client Support Specialist, Client Services",
+    "bio": "Serves as a primary point of contact, ensuring clients receive clear communication and supportive guidance at every stage.",
+    "email": "jessie.armour@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-4.webp"
+  },
+  {
+    "id": "member-13",
+    "name": "Bradley Johnson",
+    "role": "Client Support Specialist, Client Services",
+    "bio": "Provides empathetic support, helping clients understand each step of the process with clarity and reassurance.",
+    "email": "bradley.johnson@refundsauthority.com",
+    "image": "/assets/Image-Feb-16-2026-08_41_16-PM-13.webp"
+  }
+]

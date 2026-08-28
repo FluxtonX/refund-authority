@@ -1,0 +1,30 @@
+# Next.js build output
+.next/
+out/
+build/
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
+
+# Environment variables
+.env*.local
+.env
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Scraped / temporary files
+scraped_pages/
+scraped_raw.html
+post-*.css
+frontend.min.css
+prompt.md
+logo
+*.webp
+!public/assets/*.webp
+!public/leaflogo.webp
