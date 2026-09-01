@@ -10,15 +10,13 @@ export default function ServicesGrid() {
   return (
     <section className="py-20 bg-white border-t border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        
+
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16 space-y-4">
           <h2 className="text-3xl sm:text-4xl font-bold text-[#003366]">
             Our Key Services
           </h2>
-          <p className="text-base text-[#324A6D] leading-relaxed">
-            We provide structured, professional assistance across all phases of cryptocurrency fraud evaluation, blockchain forensic tracing, and administrative recovery.
-          </p>
+
         </div>
 
         {/* 6 Cards Grid - Exact #F0F4F8 Card Background & Yellow #FFCC00 Star Icon */}

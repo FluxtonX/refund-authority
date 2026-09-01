@@ -27,9 +27,9 @@ export default function NewsCarousel() {
     <section className="py-16 sm:py-20 bg-[#00509E] text-white">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
-        {/* Section Heading Title - Exact Figtree 600 font weight matching screenshot */}
+        {/* Section Heading Title - Exact Poppins 600 font weight matching reference site */}
         <div>
-          <h2 className="text-3xl sm:text-4xl lg:text-[42px] font-semibold text-white leading-[1.25] max-w-4xl tracking-tight">
+          <h2 className="font-heading-l text-white leading-[1.25] max-w-4xl tracking-tight">
             NEWS releases and notices from the Refund Authority of Canada (RAC).
           </h2>
         </div>
@@ -58,7 +58,7 @@ export default function NewsCarousel() {
                   transition={{ duration: 0.25 }}
                   className="space-y-1"
                 >
-                  <h3 className="text-base sm:text-lg font-semibold text-white hover:text-[#FFCC00] transition-colors leading-snug">
+                  <h3 className="font-primary text-white hover:text-[#FFCC00] transition-colors leading-snug">
                     <Link href="/news">{item.title}</Link>
                   </h3>
                 </motion.div>

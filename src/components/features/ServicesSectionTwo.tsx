@@ -38,31 +38,31 @@ export default function ServicesSectionTwo() {
             className="lg:col-span-7 space-y-8"
           >
             {/* Heading 1 & Paragraph 1 */}
-            <div className="space-y-3">
-              <h2 className="text-3xl sm:text-4xl font-semibold text-[#003366] leading-tight">
+            <div className="space-y-2">
+              <h3 className="font-primary text-[#003366]">
                 Assistance for Investment Fraud Cases
-              </h2>
-              <p className="text-base text-slate-700 leading-relaxed font-normal">
+              </h3>
+              <p className="font-body text-slate-700">
                 Our service is structured to assist individuals in addressing losses resulting from investment fraud. We apply our experience and work within established legal frameworks, including cooperation with relevant Canadian authorities where applicable, to provide reliable guidance throughout each case.
               </p>
             </div>
 
             {/* Heading 2 & Paragraph 2 */}
             <div className="space-y-2 pt-2 border-t border-slate-200/70">
-              <h3 className="text-xl sm:text-2xl font-bold text-[#003366]">
+              <h3 className="font-primary text-[#003366]">
                 A Non-Profit Approach
               </h3>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="font-body text-slate-600">
                 As a non-profit organization, we do not operate on a success-fee basis. Our services are provided without charge to those we support, reflecting our commitment to assisting individuals affected by financial fraud.
               </p>
             </div>
 
             {/* Heading 3 & Paragraph 3 */}
             <div className="space-y-2 pt-2 border-t border-slate-200/70">
-              <h3 className="text-xl sm:text-2xl font-bold text-[#003366]">
+              <h3 className="font-primary text-[#003366]">
                 Expertise You Can Trust
               </h3>
-              <p className="text-sm sm:text-base text-slate-600 leading-relaxed font-normal">
+              <p className="font-body text-slate-600">
                 Our team’s experience with blockchain analysis supports our ability to review transaction data thoroughly. This capability allows us to examine cases in detail and provide informed guidance to those we assist.
               </p>
             </div>

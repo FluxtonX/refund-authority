@@ -20,7 +20,7 @@ export default function ServicesSectionOne() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.4 }}
-          className="text-base sm:text-lg font-bold text-[#FFCC00] uppercase tracking-wider"
+          className="font-heading-s font-semibold text-[#FFCC00] uppercase tracking-wider"
         >
           Client-Focused
         </motion.div>
@@ -30,7 +30,7 @@ export default function ServicesSectionOne() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.1 }}
-          className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white leading-tight tracking-tight max-w-3xl mx-auto"
+          className="font-heading-l text-white leading-tight tracking-tight max-w-3xl mx-auto"
         >
           Transparent Assistance for Cryptocurrency Fraud Cases
         </motion.h1>
@@ -40,7 +40,7 @@ export default function ServicesSectionOne() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-base sm:text-lg text-white/95 leading-relaxed font-normal max-w-3xl mx-auto"
+          className="font-body text-white/95 max-w-3xl mx-auto"
         >
           Our firm focuses on assisting clients who have experienced financial losses due to fraudulent activity, with particular experience in the cryptocurrency sector. Our team operates with transparency and a client-centered approach, keeping you informed at every stage. We are committed to providing clear guidance and steady support throughout the process.
         </motion.p>

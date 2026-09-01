@@ -28,7 +28,7 @@ export default function LeadershipQuotes() {
         
         {/* Section Title H2 - Exact white title matching reference site */}
         <div className="mb-16">
-          <h2 className="text-3xl sm:text-4xl font-bold text-white tracking-tight">
+          <h2 className="font-heading-l text-white tracking-tight">
             Guided by Experience
           </h2>
         </div>
@@ -56,15 +56,15 @@ export default function LeadershipQuotes() {
 
               {/* Quote & Credentials Content */}
               <div className="flex flex-col justify-between space-y-4 flex-grow">
-                <p className="text-sm sm:text-base text-white/95 leading-relaxed font-normal italic">
+                <p className="font-body text-white/95 italic">
                   {leader.quote}
                 </p>
 
                 <div className="pt-4 border-t border-white/15">
-                  <h3 className="text-xl font-bold text-white">
+                  <h3 className="font-primary text-white">
                     {leader.name}
                   </h3>
-                  <p className="text-xs sm:text-sm font-semibold text-[#FFCC00] mt-0.5">
+                  <p className="font-body-s font-semibold text-[#FFCC00] mt-0.5">
                     {leader.role}
                   </p>
                 </div>

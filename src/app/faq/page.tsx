@@ -61,30 +61,32 @@ export default function FaqPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      <main className="flex-grow pt-20">
+      <main className="flex-grow">
         
         {/* SECTION 1: Exact Soft Blue #6497C7 FAQ Hero Section */}
         <FaqHeroSection />
 
-        {/* SECTION 2: 2-Column FAQ Layout matching user screenshot 100% pixel-perfect */}
+        {/* SECTION 2: FAQ Section (Full-width top header + 2-Column layout aligned with 3rd item) */}
         <section className="py-16 sm:py-24 bg-white border-b border-gray-100">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-start">
-              
-              {/* Left Column (Heading, Subtitle, & Need Further Information Card with Submit Inquiry Yellow Button) */}
-              <div className="lg:col-span-5 space-y-6">
-                <div>
-                  <h2 className="text-3xl sm:text-4xl font-bold text-[#003366] leading-tight tracking-tight">
-                    Frequently Asked Questions
-                  </h2>
-                  <p className="text-sm sm:text-base text-slate-800 font-normal mt-2">
-                    Here are some common questions.
-                  </p>
-                </div>
+            
+            {/* Full-Width Top Section Header */}
+            <div className="w-full text-left space-y-2 mb-10 lg:mb-12">
+              <h2 className="font-heading-l text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#003366] leading-tight tracking-tight">
+                Frequently Asked Questions
+              </h2>
+              <p className="font-body text-base sm:text-lg text-slate-700 font-normal">
+                Here are some common questions.
+              </p>
+            </div>
 
-                {/* Need Further Information Card Box (Light Ice Blue #F0F4F8 with Submit Inquiry Button) */}
-                <div className="bg-[#F0F4F8] p-6 sm:p-8 rounded-none border border-slate-200/80 space-y-4 mt-8">
-                  <h3 className="text-xl font-bold text-[#003366]">
+            {/* 2-Column Grid: Left (Need Further Info aligned to 3rd item) & Right (Accordion List) */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
+              
+              {/* Left Column: Need Further Information Card Box (Top margin lg:mt-[165px] aligns with 3rd item 'How long does the process take?') */}
+              <div className="lg:col-span-5 lg:mt-[165px]">
+                <div className="bg-[#F0F4F8] p-6 sm:p-8 rounded-none border border-slate-200/80 space-y-4">
+                  <h3 className="text-xl sm:text-2xl font-bold text-[#003366]">
                     Need further information?
                   </h3>
                   <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
@@ -104,7 +106,7 @@ export default function FaqPage() {
                 </div>
               </div>
 
-              {/* Right Column (Minimal Divider Accordion List matching user screenshot) */}
+              {/* Right Column (Minimal Divider Accordion List) */}
               <div className="lg:col-span-7">
                 <div className="border-b border-slate-200">
                   {faqAccordionList.map((item) => {
@@ -155,17 +157,17 @@ export default function FaqPage() {
         {/* SECTION 4: Contact Options — Reach Out to Us / Get in Touch (Matching user screenshot 100% pixel-perfect) */}
         <FaqGetInTouchSection />
 
-        {/* SECTION 5: Final CTA — Need assistance beyond our FAQ? */}
+        {/* SECTION 5: Final CTA — Need assistance beyond our FAQ? (Left-aligned) */}
         <section className="py-20 bg-[#00509E] text-white">
-          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-tight">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-left space-y-8">
+            <h2 className="text-3xl sm:text-4xl lg:text-5xl font-semibold text-white tracking-tight">
               Need assistance beyond our FAQ?
             </h2>
-            <p className="text-base sm:text-lg text-white/95 leading-relaxed font-normal max-w-2xl mx-auto">
+            <p className="text-base sm:text-lg text-white/95 leading-relaxed font-normal max-w-3xl">
               We aim to address any questions you may have about our services and how we work. Transparency is important to us, and we welcome you to reach out with any concerns or specific inquiries.
             </p>
 
-            <div className="flex flex-wrap items-center justify-center gap-4 pt-2">
+            <div className="flex flex-wrap items-center justify-start gap-4 pt-2">
               <Link
                 href="/contact"
                 className="inline-flex items-center justify-center gap-2 px-8 py-3.5 rounded-none bg-[#FFCC00] text-[#101828] text-sm font-bold hover:bg-[#E6B800] transition-colors shadow-md"

@@ -8,7 +8,7 @@ import { PhoneCall, ArrowRight } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="relative min-h-[80vh] flex items-center pt-32 pb-20 lg:pt-36 lg:pb-28 overflow-hidden">
+    <section className="relative min-h-[75vh] flex items-center py-20 lg:py-28 overflow-hidden">
       
       {/* Background Image Container - Clean minimal dark tint overlay */}
       <div className="absolute inset-0 z-0">
@@ -25,25 +25,24 @@ export default function HeroSection() {
 
       {/* Hero Content Container */}
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-        <div className="max-w-3xl space-y-6">
+        <div className="max-w-4xl space-y-6">
           
-          {/* Main Headline H1 - Exact text from reference site */}
+          {/* Main Headline H1 - Natural inline text flow matching WordPress reference site */}
           <motion.h1
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-white leading-[1.18]"
+            className="font-heading-l text-white tracking-tight leading-[1.2]"
           >
-            A conversation could change everything.{' '}
-            <span className="block mt-1">Reach out today.</span>
+            A conversation could change everything. Reach out today.
           </motion.h1>
 
-          {/* Subtext Paragraph - Exact text from reference site */}
+          {/* Subtext Paragraph - Exact typography from WordPress reference site */}
           <motion.p
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-base sm:text-lg text-white/90 leading-relaxed font-normal max-w-2xl drop-shadow-sm"
+            className="font-body text-white/95 max-w-2xl drop-shadow-sm"
           >
             We are dedicated to helping victims of investment and cryptocurrencies scams.
             <br className="hidden sm:inline" />

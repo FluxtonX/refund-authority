@@ -28,10 +28,10 @@ export default function ServicesSectionFour() {
         
         {/* Title & Subtitle in Pure White */}
         <div className="space-y-3 max-w-2xl mx-auto">
-          <h2 className="text-3xl sm:text-4xl font-semibold text-white">
+          <h2 className="font-heading-l text-white">
             Get Personalized Assistance Today
           </h2>
-          <p className="text-sm sm:text-base text-white/95 leading-relaxed font-normal">
+          <p className="font-body text-white/95">
             We recognize the difficulties that can follow financial loss due to fraudulent activity. We offer tailored guidance and support based on each individual’s circumstances.
           </p>
         </div>

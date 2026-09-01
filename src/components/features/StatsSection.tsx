@@ -16,10 +16,10 @@ export default function StatsSection() {
     <section className="py-16 bg-[#00509E] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-2xl sm:text-3xl font-bold text-white mb-3">
+          <h2 className="font-heading-l text-white mb-3">
             Key Achievements in Recovery Services
           </h2>
-          <p className="text-sm sm:text-base text-[#C8D5DC]">
+          <p className="font-body text-[#C8D5DC]">
             Through professional standards and a client-centered approach, we have built a dependable resource for individuals seeking guidance.
           </p>
         </div>
@@ -37,10 +37,10 @@ export default function StatsSection() {
               <div className="p-3 bg-white/10 rounded-xl mb-1">
                 {stat.icon}
               </div>
-              <div className="text-3xl sm:text-4xl font-extrabold text-white tracking-tight">
+              <div className="font-heading-l text-white tracking-tight">
                 {stat.value}
               </div>
-              <div className="text-xs font-semibold text-[#C8D5DC] uppercase tracking-wider">
+              <div className="font-body-s font-semibold text-[#C8D5DC] uppercase tracking-wider">
                 {stat.label}
               </div>
             </motion.div>

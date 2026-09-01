@@ -30,10 +30,10 @@ export default function FaqCommonQuestionsSection() {
         
         {/* Section Header */}
         <div className="space-y-3 max-w-3xl">
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#003366] leading-tight">
+          <h2 className="font-heading-l text-[#003366]">
             Common Questions
           </h2>
-          <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+          <p className="font-body text-slate-700">
             Understanding our services can empower your recovery journey. Below, we address key inquiries.
           </p>
         </div>
@@ -51,10 +51,10 @@ export default function FaqCommonQuestionsSection() {
                     onClick={() => toggleItem(item.id)}
                     className="w-full bg-[#F0F4F8] hover:bg-[#E2E8F0] px-6 py-4 rounded-none flex items-center gap-3 text-left transition-colors cursor-pointer"
                   >
-                    <span className="text-lg font-bold text-[#003366] shrink-0">
+                    <span className="text-base font-bold text-[#003366] shrink-0">
                       {isOpen ? '—' : '+'}
                     </span>
-                    <span className="text-base font-bold text-[#003366]">
+                    <span className="text-base sm:text-lg font-semibold text-[#003366]">
                       {item.question}
                     </span>
                   </button>
@@ -67,7 +67,7 @@ export default function FaqCommonQuestionsSection() {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.25, ease: 'easeInOut' }}
                       >
-                        <div className="px-6 py-3 text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                        <div className="px-6 py-3 font-body text-slate-700">
                           {item.answer}
                         </div>
                       </motion.div>
@@ -88,10 +88,10 @@ export default function FaqCommonQuestionsSection() {
                     onClick={() => toggleItem(item.id)}
                     className="w-full bg-[#F0F4F8] hover:bg-[#E2E8F0] px-6 py-4 rounded-none flex items-center gap-3 text-left transition-colors cursor-pointer"
                   >
-                    <span className="text-lg font-bold text-[#003366] shrink-0">
+                    <span className="text-base font-bold text-[#003366] shrink-0">
                       {isOpen ? '—' : '+'}
                     </span>
-                    <span className="text-base font-bold text-[#003366]">
+                    <span className="text-base sm:text-lg font-semibold text-[#003366]">
                       {item.question}
                     </span>
                   </button>
@@ -104,7 +104,7 @@ export default function FaqCommonQuestionsSection() {
                         exit={{ height: 0, opacity: 0 }}
                         transition={{ duration: 0.25, ease: 'easeInOut' }}
                       >
-                        <div className="px-6 py-3 text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+                        <div className="px-6 py-3 font-body text-slate-700">
                           {item.answer}
                         </div>
                       </motion.div>

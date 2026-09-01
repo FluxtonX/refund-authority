@@ -24,10 +24,10 @@ export default function AchievementsMapSection() {
           transition={{ duration: 0.5 }}
           className="max-w-4xl space-y-4"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#003366] tracking-tight">
+          <h2 className="font-heading-l text-[#003366] tracking-tight">
             Key Achievements in Recovery Services
           </h2>
-          <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+          <p className="font-body text-slate-700">
             Our organization has supported numerous clients in addressing financial losses resulting from fraudulent activities. Through a commitment to professional standards and a client-centered approach, we have built a reputation as a dependable resource for individuals seeking guidance and resolution.
           </p>
         </motion.div>
@@ -40,7 +40,7 @@ export default function AchievementsMapSection() {
           transition={{ duration: 0.5, delay: 0.1 }}
           className="space-y-10 pt-6 border-t border-gray-100"
         >
-          <h2 className="text-3xl sm:text-4xl font-bold text-[#003366] tracking-tight">
+          <h2 className="font-heading-l text-[#003366] tracking-tight">
             Connect with Us
           </h2>
 
@@ -51,9 +51,9 @@ export default function AchievementsMapSection() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Star className="w-6 h-6 fill-[#FFCC00] text-[#FFCC00]" />
-                  <h3 className="text-lg font-bold text-[#003366]">Contact Information</h3>
+                  <h3 className="font-heading-s font-semibold text-[#003366]">Contact Information</h3>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                <p className="font-body-s text-slate-600">
                   Should you require assistance or have inquiries, please reach out through our contact details listed below.
                 </p>
               </div>
@@ -70,9 +70,9 @@ export default function AchievementsMapSection() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Star className="w-6 h-6 fill-[#FFCC00] text-[#FFCC00]" />
-                  <h3 className="text-lg font-bold text-[#003366]">Need further information?</h3>
+                  <h3 className="font-heading-s font-semibold text-[#003366]">Need further information?</h3>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                <p className="font-body-s text-slate-600">
                   We provide clear information about our services and what to expect when working with us, and we encourage clients to ask questions before proceeding.
                 </p>
               </div>
@@ -89,9 +89,9 @@ export default function AchievementsMapSection() {
               <div className="space-y-3">
                 <div className="flex items-center gap-3">
                   <Star className="w-6 h-6 fill-[#FFCC00] text-[#FFCC00]" />
-                  <h3 className="text-lg font-bold text-[#003366]">Meet Our Team</h3>
+                  <h3 className="font-primary text-[#003366]">Meet Our Team</h3>
                 </div>
-                <p className="text-xs text-slate-600 leading-relaxed font-normal">
+                <p className="text-sm font-bold text-[#101828] leading-relaxed">
                   Learn more about our team members, who bring both professional expertise and a client-focused approach to their work.
                 </p>
               </div>

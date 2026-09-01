@@ -21,12 +21,12 @@ export default function VictimSupport() {
             className="lg:col-span-7 space-y-6"
           >
             {/* Title H2 */}
-            <h2 className="text-3xl sm:text-4xl font-bold text-[#003366] leading-tight">
+            <h2 className="font-heading-l text-[#003366] leading-tight">
               Specialized Support for Victims of Investment Scams
             </h2>
 
             {/* Paragraphs */}
-            <div className="space-y-4 text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+            <div className="space-y-4 font-body text-slate-700">
               <p>
                 We recognize the emotional and financial challenges that can follow cryptocurrency fraud. Based in Canada, we offer guidance to individuals seeking to explore refund options and understand the steps involved in addressing their situation.
               </p>
@@ -40,20 +40,20 @@ export default function VictimSupport() {
               
               {/* SECURE Block */}
               <div className="space-y-2">
-                <h3 className="text-xl font-extrabold text-[#003366] tracking-wide">
+                <h3 className="font-primary text-[#003366] tracking-wide">
                   SECURE
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed font-normal">
+                <p className="font-body text-slate-600">
                   We prioritize transparency in every interaction, ensuring clients understand the process and their options. Our team is devoted to restoring hope and confidence.
                 </p>
               </div>
 
               {/* ADVANCED Block */}
               <div className="space-y-2">
-                <h3 className="text-xl font-extrabold text-[#003366] tracking-wide">
+                <h3 className="font-primary text-[#003366] tracking-wide">
                   ADVANCED
                 </h3>
-                <p className="text-sm text-slate-600 leading-relaxed font-normal">
+                <p className="font-body text-slate-600">
                   We utilize blockchain analysis tools to support our case assessments, reinforcing our commitment to providing thorough and informed guidance for our clients.
                 </p>
               </div>

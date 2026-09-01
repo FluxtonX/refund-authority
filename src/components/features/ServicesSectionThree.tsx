@@ -12,14 +12,14 @@ export default function ServicesSectionThree() {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-12">
         
         {/* Section Header */}
-        <div className="max-w-3xl space-y-3">
-          <span className="text-sm font-semibold text-[#00509E] tracking-wider uppercase">
+        <div className="w-full space-y-3">
+          <span className="font-heading-s font-semibold text-[#00509E] tracking-wider uppercase">
             Our Expertise
           </span>
-          <h2 className="text-3xl sm:text-4xl font-semibold text-[#003366]">
+          <h2 className="font-heading-l text-[#003366]">
             Guidance for Investment Losses
           </h2>
-          <p className="text-base text-slate-700 leading-relaxed font-normal">
+          <p className="font-body text-slate-700">
             We focus on assisting individuals who have experienced financial losses due to cryptocurrency fraud or questionable investment schemes. Our experienced team is committed to offering clear guidance and practical support throughout each case.
           </p>
         </div>
@@ -37,24 +37,24 @@ export default function ServicesSectionThree() {
             >
               <div className="space-y-3 flex-1 flex flex-col justify-start">
                 {/* Card Title (Dark Navy #003366, Centered) */}
-                <h3 className="text-lg sm:text-xl font-bold text-[#003366] leading-snug">
+                <h3 className="font-primary text-[#003366] leading-snug">
                   {card.title}
                 </h3>
 
                 {/* Card Description (Centered) */}
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed font-normal">
+                <p className="font-body-s text-slate-600">
                   {card.description}
                 </p>
               </div>
 
               {/* Card Button (Centered square shape) */}
-              <div className="pt-2">
+              <div className="pt-3 w-full">
                 <Link
                   href={card.link}
-                  className="inline-flex items-center justify-center gap-1.5 px-6 py-2.5 rounded-none border border-[#003366] text-[#003366] text-xs font-bold hover:bg-[#003366] hover:text-white transition-colors"
+                  className="inline-flex items-center justify-center gap-2 w-full max-w-[200px] px-7 py-3.5 rounded-none border-2 border-[#003366] text-[#003366] text-sm sm:text-base font-normal hover:bg-[#003366] hover:text-white transition-all shadow-sm"
                 >
                   <span>{card.buttonText}</span>
-                  <ArrowRight className="w-3.5 h-3.5" />
+                  <ArrowRight className="w-4 h-4" />
                 </Link>
               </div>
             </motion.div>

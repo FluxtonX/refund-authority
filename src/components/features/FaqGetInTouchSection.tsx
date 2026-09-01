@@ -34,13 +34,13 @@ export default function FaqGetInTouchSection() {
         
         {/* Header */}
         <div className="space-y-3 max-w-2xl mx-auto">
-          <span className="text-sm sm:text-base font-semibold text-[#101828] tracking-normal">
+          <span className="font-heading-s font-semibold text-[#101828] tracking-normal">
             Reach Out to Us
           </span>
-          <h2 className="text-4xl sm:text-5xl font-bold text-[#003366] tracking-tight">
+          <h2 className="font-heading-xl text-3xl sm:text-4xl lg:text-5xl font-bold text-[#003366] tracking-tight">
             Get in Touch
           </h2>
-          <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal pt-1">
+          <p className="font-body text-slate-700 pt-1">
             We are here to assist you with your inquiries. Our team is dedicated to providing clear guidance and support.
           </p>
         </div>
@@ -53,10 +53,10 @@ export default function FaqGetInTouchSection() {
             <div className="flex justify-center">
               <EmailIcon />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-[#003366]">
+            <h3 className="font-primary text-[#003366]">
               Email Us
             </h3>
-            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+            <p className="font-body-s text-slate-700">
               For questions or support, reach us at any time. We respond promptly to all emails.
             </p>
             <div className="pt-2">
@@ -74,10 +74,10 @@ export default function FaqGetInTouchSection() {
             <div className="flex justify-center">
               <PhoneIcon />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-[#003366]">
+            <h3 className="font-primary text-[#003366]">
               Call Us
             </h3>
-            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+            <p className="font-body-s text-slate-700">
               For immediate assistance, feel free to call us. We are available to help with your needs.
             </p>
             <div className="pt-2">
@@ -95,10 +95,10 @@ export default function FaqGetInTouchSection() {
             <div className="flex justify-center">
               <LocationPinIcon />
             </div>
-            <h3 className="text-xl sm:text-2xl font-bold text-[#003366]">
+            <h3 className="font-primary text-[#003366]">
               Office Location
             </h3>
-            <p className="text-xs sm:text-sm text-slate-700 leading-relaxed font-normal">
+            <p className="font-body-s text-slate-700">
               Our office is open for consultations and discussions. Visit us to learn more about our services.
             </p>
             <div className="pt-2">

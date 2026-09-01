@@ -6,7 +6,7 @@ import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
-import ServicesSectionFive from '@/components/features/ServicesSectionFive';
+import TeamClientFeedback from '@/components/features/TeamClientFeedback';
 import teamData from '@/data/teamData.json';
 import { ArrowRight, Mail, ShieldCheck, Eye, HeartHandshake } from 'lucide-react';
 
@@ -15,7 +15,7 @@ export default function TeamPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      <main className="flex-grow pt-20">
+      <main className="flex-grow">
         
         {/* SECTION 1: Hero Section — Our Areas of Focus (Blue #00509E, Centered Text, No Image) */}
         <section className="py-20 sm:py-24 bg-[#00509E] text-white relative overflow-hidden">
@@ -87,10 +87,10 @@ export default function TeamPage() {
             
             {/* Section Title & Subtitle */}
             <div className="text-center space-y-3 max-w-3xl mx-auto">
-              <h2 className="text-3xl sm:text-4xl font-semibold text-[#003366]">
+              <h2 className="font-heading-xl text-4xl sm:text-5xl lg:text-6xl font-bold text-[#003366] tracking-tight">
                 Meet Our Team
               </h2>
-              <p className="text-base text-slate-600 leading-relaxed font-normal">
+              <p className="text-base sm:text-lg font-bold text-[#101828] leading-relaxed">
                 Learn more about our team members, who combine professional experience with a supportive, client-focused approach to their work.
               </p>
             </div>
@@ -127,7 +127,7 @@ export default function TeamPage() {
                       </p>
                     </div>
 
-                    <p className="text-sm sm:text-base text-slate-700 leading-relaxed font-normal">
+                    <p className="text-base font-semibold text-slate-800 leading-relaxed">
                       {member.bio}
                     </p>
 
@@ -198,13 +198,13 @@ export default function TeamPage() {
           </div>
         </section>
 
-        {/* SECTION 4: Client Feedback (Blue #00509E bg Testimonial Slider) */}
-        <ServicesSectionFive />
+        {/* SECTION 4: Client Feedback (Exact layout matching WordPress screenshot) */}
+        <TeamClientFeedback />
 
-        {/* SECTION 5: Take the Next Step Toward Recovery CTA */}
-        <section className="py-20 bg-[#00509E] text-white">
+        {/* SECTION 5: Take the Next Step Toward Recovery CTA (Separate section with margin gap) */}
+        <section className="mt-12 sm:mt-16 lg:mt-20 py-20 bg-[#00509E] text-white">
           <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center space-y-8">
-            <h2 className="text-3xl sm:text-4xl font-semibold text-white tracking-tight">
+            <h2 className="font-heading-l text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight">
               Take the Next Step Toward Recovery
             </h2>
             <p className="text-base sm:text-lg text-white/95 leading-relaxed font-normal max-w-2xl mx-auto">

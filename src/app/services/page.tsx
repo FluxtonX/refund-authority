@@ -14,7 +14,7 @@ export default function ServicesPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      <main className="flex-grow pt-20">
+      <main className="flex-grow">
         {/* SECTION 1: Services Hero — Client-Focused / Transparent Assistance (Blue #00509E, Centered Text, No Image) */}
         <ServicesSectionOne />
 
@@ -37,14 +37,14 @@ export default function ServicesPage() {
               
               {/* Left Column: Heading H2 */}
               <div className="lg:col-span-5">
-                <h2 className="text-3xl sm:text-4xl font-semibold text-[#003366] leading-tight tracking-tight">
+                <h2 className="font-heading-l text-[#003366] leading-tight tracking-tight">
                   Commitment to Client-Centered Support
                 </h2>
               </div>
 
               {/* Right Column: Paragraph Text */}
               <div className="lg:col-span-7">
-                <p className="text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+                <p className="font-body text-slate-700 leading-relaxed font-normal">
                   Our organization has supported numerous individuals in addressing financial losses resulting from fraudulent activity. Through a commitment to professional standards and a client-centered approach, we have developed a reputation as a trusted resource for those seeking guidance and resolution.
                 </p>
               </div>

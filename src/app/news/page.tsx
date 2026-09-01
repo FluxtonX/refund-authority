@@ -13,7 +13,7 @@ export default function NewsPage() {
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
 
-      <main className="flex-grow pt-20">
+      <main className="flex-grow">
         
         {/* SECTION 1: News Hero Section (Dark Navy #1C244B Text, Light Blue #E6EFF8 Background) */}
         <NewsHeroSection />
@@ -24,10 +24,10 @@ export default function NewsPage() {
             
             {/* Section Header */}
             <div className="space-y-2 text-left">
-              <h2 className="text-4xl sm:text-5xl lg:text-[52px] font-extrabold text-[#003366] tracking-tight leading-tight">
+              <h2 className="text-3xl sm:text-4xl lg:text-[46px] font-semibold text-[#003366] tracking-tight leading-tight">
                 Latest Updates and Insights
               </h2>
-              <p className="text-base sm:text-lg text-[#324A6D] font-bold pt-1">
+              <p className="text-base sm:text-lg text-[#324A6D] font-normal pt-1">
                 Stay informed with the latest in cryptocurrency recovery and news.
               </p>
             </div>
@@ -37,23 +37,23 @@ export default function NewsPage() {
               {newsData.map((item) => (
                 <div key={item.id} className="space-y-2 text-left">
                   
-                  {/* Article Title: Vibrant Blue #00509E, Extra Fat Bold */}
-                  <h3 className="text-xl sm:text-[22px] font-extrabold text-[#00509E] leading-[1.3] hover:underline transition-all">
+                  {/* Article Title: Vibrant Blue #00509E, font-semibold */}
+                  <h3 className="text-xl sm:text-[22px] font-semibold text-[#00509E] leading-[1.3] hover:underline transition-all">
                     <Link href={item.link}>
                       {item.title}
                     </Link>
                   </h3>
 
                   {/* Date: Soft Muted Gray/Blue */}
-                  <p className="text-sm sm:text-base font-semibold text-[#8898AA] pt-0.5">
+                  <p className="text-sm sm:text-base font-normal text-[#8898AA] pt-0.5">
                     {item.date}
                   </p>
 
-                  {/* Read More Link: Bright Amber Gold #FFCC00 */}
+                  {/* Read More Link: Bright Amber Gold #FFCC00, font-medium */}
                   <div className="pt-1">
                     <Link
                       href={item.link}
-                      className="text-sm sm:text-base font-bold text-[#FFCC00] hover:underline inline-block"
+                      className="text-sm sm:text-base font-medium text-[#FFCC00] hover:underline inline-block"
                     >
                       Read More »
                     </Link>

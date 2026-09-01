@@ -6,7 +6,7 @@ import { motion } from 'framer-motion';
 
 export default function FaqHeroSection() {
   return (
-    <section className="py-20 sm:py-28 bg-[#6497C7] text-white relative overflow-hidden">
+    <section className="py-12 sm:py-16 lg:py-20 bg-[#6497C7] text-white relative overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 sm:px-12 lg:px-16 w-full">
         <div className="max-w-xl space-y-6 text-left">
           
@@ -25,7 +25,7 @@ export default function FaqHeroSection() {
             initial={{ opacity: 0, x: -15 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white leading-[1.15] tracking-tight"
+            className="font-heading-xl text-white leading-[1.15] tracking-tight"
           >
             Frequently Asked<br />Questions
           </motion.h1>
@@ -35,7 +35,7 @@ export default function FaqHeroSection() {
             initial={{ opacity: 0, x: -15 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-sm sm:text-base text-white leading-relaxed font-normal pt-1 max-w-lg"
+            className="font-body text-white pt-1 max-w-lg"
           >
             Find answers to frequently asked questions about our services and how we may be able to support you.
           </motion.p>

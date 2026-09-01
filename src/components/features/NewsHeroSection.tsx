@@ -5,14 +5,17 @@ import Image from 'next/image';
 
 export default function NewsHeroSection() {
   return (
-    <section className="py-16 sm:py-20 bg-[#E6EFF8] text-[#1C244B]">
+    <section className="py-16 sm:py-20 bg-[#6497C7] text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-16 items-center">
           
-          {/* Left Column: Heading Text in Dark Navy (#1C244B) */}
+          {/* Left Column: Heading Text in Dark Black (#101828) formatted in 4 rows */}
           <div className="lg:col-span-7 space-y-4 text-left">
-            <h1 className="text-3xl sm:text-4xl lg:text-5xl font-bold text-[#1C244B] leading-[1.2] tracking-tight">
-              Stay up to date with news releases and notices from the <br className="hidden sm:inline" />Refund Authority.
+            <h1 className="font-heading-l text-[#101828] text-3xl sm:text-4xl lg:text-[42px] font-semibold leading-[1.25] tracking-tight">
+              Stay up to date with<br />
+              news releases and<br />
+              notices from the<br />
+              Refund Authority.
             </h1>
           </div>
 
