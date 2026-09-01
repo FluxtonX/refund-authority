@@ -40,7 +40,7 @@ export default function VictimSupport() {
               
               {/* SECURE Block */}
               <div className="space-y-2">
-                <h3 className="font-primary text-[#003366] tracking-wide">
+                <h3 className="font-heading-l text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#003366] tracking-tight">
                   SECURE
                 </h3>
                 <p className="font-body text-slate-600">
@@ -50,7 +50,7 @@ export default function VictimSupport() {
 
               {/* ADVANCED Block */}
               <div className="space-y-2">
-                <h3 className="font-primary text-[#003366] tracking-wide">
+                <h3 className="font-heading-l text-3xl sm:text-4xl lg:text-[44px] font-bold text-[#003366] tracking-tight">
                   ADVANCED
                 </h3>
                 <p className="font-body text-slate-600">

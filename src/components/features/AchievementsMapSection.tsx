@@ -16,20 +16,24 @@ export default function AchievementsMapSection() {
     <section className="py-20 bg-white border-t border-b border-gray-100">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-20">
         
-        {/* Key Achievements in Recovery Services Block */}
+        {/* Key Achievements in Recovery Services Block (2-Column Side-by-Side: 2-Row Heading Left, Paragraph Right) */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="max-w-4xl space-y-4"
+          className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start"
         >
-          <h2 className="font-heading-l text-[#003366] tracking-tight">
-            Key Achievements in Recovery Services
-          </h2>
-          <p className="font-body text-slate-700">
-            Our organization has supported numerous clients in addressing financial losses resulting from fraudulent activities. Through a commitment to professional standards and a client-centered approach, we have built a reputation as a dependable resource for individuals seeking guidance and resolution.
-          </p>
+          <div className="lg:col-span-6">
+            <h2 className="font-heading-l text-3xl sm:text-4xl lg:text-[40px] font-bold text-[#003366] tracking-tight leading-tight">
+              Key Achievements in<br className="hidden sm:inline" /> Recovery Services
+            </h2>
+          </div>
+          <div className="lg:col-span-6">
+            <p className="font-body text-base sm:text-lg text-slate-700 leading-relaxed font-normal">
+              Our organization has supported numerous clients in addressing financial losses resulting from fraudulent activities. Through a commitment to professional standards and a client-centered approach, we have built a reputation as a dependable resource for individuals seeking guidance and resolution.
+            </p>
+          </div>
         </motion.div>
 
         {/* Connect with Us & 3 Icon Info Cards */}
