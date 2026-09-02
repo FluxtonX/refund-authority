@@ -1,4 +1,5 @@
 import { NextResponse } from 'next/server';
+import { supabase } from '@/lib/supabase';
 
 export async function POST(req: Request) {
   try {
@@ -12,6 +13,23 @@ export async function POST(req: Request) {
         { error: 'Email and message are required fields.' },
         { status: 400 }
       );
+    }
+
+    // Save inquiry into Supabase database (non-blocking)
+    try {
+      await supabase.from('inquiries').insert([
+        {
+          first_name: firstName || '',
+          surname: surname || '',
+          email: email,
+          phone: phone || '',
+          priority: priority || 'Medium',
+          message: message,
+        },
+      ]);
+      console.log('✅ Logged inquiry into Supabase database');
+    } catch (dbErr) {
+      console.warn('Supabase DB inquiry log warning:', dbErr);
     }
 
     const apiKey = process.env.BREVO_API_KEY;

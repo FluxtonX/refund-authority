@@ -1,16 +1,56 @@
 'use client';
 
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { motion } from 'framer-motion';
 import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import TeamClientFeedback from '@/components/features/TeamClientFeedback';
-import teamData from '@/data/teamData.json';
+import teamDataFallback from '@/data/teamData.json';
+import { supabase } from '@/lib/supabase';
 import { ArrowRight, Mail, Phone, ShieldCheck, Eye, HeartHandshake } from 'lucide-react';
 
 export default function TeamPage() {
+  const [membersList, setMembersList] = useState<any[]>(teamDataFallback);
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    async function fetchTeamMembers() {
+      try {
+        const { data, error } = await supabase
+          .from('team_members')
+          .select('*')
+          .order('created_at', { ascending: true });
+
+        if (error) {
+          console.warn('Supabase fetch notice (using fallback):', error.message);
+          setMembersList(teamDataFallback);
+        } else if (data && data.length > 0) {
+          // Normalize database fields to match UI props
+          const normalized = data.map((m: any) => ({
+            id: m.id,
+            name: m.name,
+            role: m.role,
+            bio: m.bio,
+            email: m.email,
+            phone: m.phone,
+            image: m.image_url || m.image
+          }));
+          setMembersList(normalized);
+        } else {
+          setMembersList(teamDataFallback);
+        }
+      } catch (err) {
+        console.warn('Error fetching team from Supabase:', err);
+        setMembersList(teamDataFallback);
+      } finally {
+        setIsLoading(false);
+      }
+    }
+
+    fetchTeamMembers();
+  }, []);
   return (
     <div className="min-h-screen flex flex-col bg-white">
       <Header />
@@ -95,9 +135,9 @@ export default function TeamPage() {
               </p>
             </div>
 
-            {/* 13 Team Members — 1 Single Member per Full-Width Row */}
+            {/* Team Members List (Loaded dynamically from Supabase) */}
             <div className="space-y-8">
-              {teamData.map((member: any, idx) => (
+              {membersList.map((member: any, idx) => (
                 <motion.div
                   key={member.id}
                   initial={{ opacity: 0, y: 20 }}
