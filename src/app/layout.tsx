@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Figtree, Poppins } from "next/font/google";
 import "./globals.css";
+import WhatsAppWidget from "@/components/layout/WhatsAppWidget";
 
 const figtree = Figtree({
   subsets: ["latin"],
@@ -41,6 +42,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased text-[#101828] bg-[#F9FAFB] selection:bg-[#00509E] selection:text-white">
         {children}
+        <WhatsAppWidget />
       </body>
     </html>
   );

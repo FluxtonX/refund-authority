@@ -55,12 +55,12 @@ export default function Footer() {
           <div className="md:col-span-3 lg:col-span-4 space-y-4">
             <h6 className="font-primary text-[#101828]">Get In Touch</h6>
             <ul className="space-y-3.5 text-base text-[#324A6D]">
-              <li className="flex items-center gap-3">
-                <Mail className="w-5 h-5 text-[#00509E] shrink-0" />
-                <a href="mailto:support@refundsauthority.com" className="font-medium hover:text-[#00509E] transition-colors">
-                  Email: support@refundsauthority.com
+              <div className="flex items-center gap-2 font-medium">
+                <Mail className="w-4 h-4 text-[#00509E] shrink-0" />
+                <a href="mailto:support@refundauthority.co" className="font-medium hover:text-[#00509E] transition-colors">
+                  Email: support@refundauthority.co
                 </a>
-              </li>
+              </div>
               <li className="flex items-center gap-3">
                 <Phone className="w-5 h-5 text-[#00509E] shrink-0" />
                 <a href="tel:14378862010" className="font-medium hover:text-[#00509E] transition-colors">

@@ -61,10 +61,10 @@ export default function FaqGetInTouchSection() {
             </p>
             <div className="pt-2">
               <a
-                href="mailto:support@refundsauthority.com"
+                href="mailto:support@refundauthority.co"
                 className="text-xs sm:text-sm font-semibold text-slate-800 underline hover:text-[#00509E] transition-colors"
               >
-                support@refundsauthority.com
+                support@refundauthority.co
               </a>
             </div>
           </div>

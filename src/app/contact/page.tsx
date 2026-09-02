@@ -16,11 +16,44 @@ export default function ContactPage() {
     message: ''
   });
 
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [errorMessage, setErrorMessage] = useState('');
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    setSubmitted(true);
+    setIsSubmitting(true);
+    setErrorMessage('');
+
+    try {
+      const res = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await res.json();
+
+      if (!res.ok) {
+        throw new Error(data.error || 'Failed to send message.');
+      }
+
+      setSubmitted(true);
+      setFormData({
+        firstName: '',
+        surname: '',
+        email: '',
+        phone: '',
+        priority: 'Medium',
+        message: ''
+      });
+    } catch (err: any) {
+      setErrorMessage(err.message || 'An error occurred while sending your message. Please try again.');
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   return (
@@ -67,8 +100,8 @@ export default function ContactPage() {
                   <p className="text-xs text-[#475467]">Send documentation or case details directly to our team.</p>
                 </div>
                 <div className="pt-4 border-t border-gray-200/80">
-                  <a href="mailto:support@refundsauthority.com" className="text-base font-bold text-[#00509E] hover:underline">
-                    support@refundsauthority.com
+                  <a href="mailto:support@refundauthority.co" className="text-base font-bold text-[#00509E] hover:underline">
+                    support@refundauthority.co
                   </a>
                 </div>
               </div>
@@ -114,7 +147,7 @@ export default function ContactPage() {
                   </div>
                   <div className="flex items-center gap-2">
                     <CheckCircle2 className="w-4 h-4 text-[#00509E]" />
-                    <span>Dedicated forensic advisor response</span>
+                    <span>Official sender domain: support@refundauthority.co</span>
                   </div>
                 </div>
               </div>
@@ -128,17 +161,24 @@ export default function ContactPage() {
                     </div>
                     <h3 className="text-xl font-bold text-[#101828]">Inquiry Submitted Successfully</h3>
                     <p className="text-xs text-[#475467] max-w-md mx-auto">
-                      Thank you for contacting Refund Authority. A case representative will review your message and reach out shortly.
+                      Thank you for contacting Refund Authority. An official email confirmation has been sent to your email, and a representative will review your message shortly.
                     </p>
                     <button
                       onClick={() => setSubmitted(false)}
-                      className="px-6 py-2.5 rounded-full bg-[#00509E] text-white text-xs font-semibold hover:bg-[#003F7E]"
+                      className="px-6 py-2.5 rounded-full bg-[#00509E] text-white text-xs font-semibold hover:bg-[#003F7E] transition-colors"
                     >
                       Submit Another Inquiry
                     </button>
                   </div>
                 ) : (
                   <form onSubmit={handleSubmit} className="space-y-6">
+                    {errorMessage && (
+                      <div className="p-4 bg-red-50 border border-red-200 text-red-700 rounded-xl text-xs flex items-center gap-2">
+                        <AlertCircle className="w-4 h-4 shrink-0" />
+                        <span>{errorMessage}</span>
+                      </div>
+                    )}
+
                     <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                       <div>
                         <label className="block text-xs font-bold text-[#101828] mb-2">Your Name *</label>
@@ -217,10 +257,20 @@ export default function ContactPage() {
 
                     <button
                       type="submit"
-                      className="w-full py-4 rounded-xl bg-[#00509E] text-white text-sm font-bold hover:bg-[#003F7E] transition-all shadow-md flex items-center justify-center gap-2"
+                      disabled={isSubmitting}
+                      className="w-full py-4 rounded-xl bg-[#00509E] text-white text-sm font-bold hover:bg-[#003F7E] transition-all shadow-md flex items-center justify-center gap-2 disabled:opacity-60 disabled:cursor-not-allowed"
                     >
-                      <Send className="w-4 h-4 text-[#FFCC00]" />
-                      <span>Send Message</span>
+                      {isSubmitting ? (
+                        <>
+                          <div className="w-4 h-4 border-2 border-white border-t-transparent rounded-full animate-spin" />
+                          <span>Sending Inquiry...</span>
+                        </>
+                      ) : (
+                        <>
+                          <Send className="w-4 h-4 text-[#FFCC00]" />
+                          <span>Send Message</span>
+                        </>
+                      )}
                     </button>
                   </form>
                 )}

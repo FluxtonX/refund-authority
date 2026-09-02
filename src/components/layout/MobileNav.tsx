@@ -93,7 +93,7 @@ export default function MobileNav({
                 <span>Contact Us</span>
               </Link>
               <div className="text-center text-xs text-gray-500">
-                Support: <a href="mailto:support@refundsauthority.com" className="text-[#00509E] underline">support@refundsauthority.com</a>
+                Support: <a href="mailto:support@refundauthority.co" className="text-[#00509E] underline">support@refundauthority.co</a>
               </div>
             </div>
           </motion.div>

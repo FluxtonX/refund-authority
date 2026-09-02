@@ -8,7 +8,7 @@ import Header from '@/components/layout/Header';
 import Footer from '@/components/layout/Footer';
 import TeamClientFeedback from '@/components/features/TeamClientFeedback';
 import teamData from '@/data/teamData.json';
-import { ArrowRight, Mail, ShieldCheck, Eye, HeartHandshake } from 'lucide-react';
+import { ArrowRight, Mail, Phone, ShieldCheck, Eye, HeartHandshake } from 'lucide-react';
 
 export default function TeamPage() {
   return (
@@ -97,7 +97,7 @@ export default function TeamPage() {
 
             {/* 13 Team Members — 1 Single Member per Full-Width Row */}
             <div className="space-y-8">
-              {teamData.map((member, idx) => (
+              {teamData.map((member: any, idx) => (
                 <motion.div
                   key={member.id}
                   initial={{ opacity: 0, y: 20 }}
@@ -116,7 +116,7 @@ export default function TeamPage() {
                     />
                   </div>
 
-                  {/* Right Side: Details (Name, Role, Bio, Email) */}
+                  {/* Right Side: Details (Name, Role, Bio, Email, Phone) */}
                   <div className="space-y-4 flex-1">
                     <div>
                       <h3 className="text-2xl font-bold text-[#003366]">
@@ -131,9 +131,18 @@ export default function TeamPage() {
                       {member.bio}
                     </p>
 
-                    <div className="pt-3 border-t border-slate-200/60 flex items-center gap-2 text-sm text-[#00509E] font-medium">
+                    <div className="pt-3 border-t border-slate-200/60 flex flex-wrap items-center gap-2.5 text-sm text-[#00509E] font-medium">
                       <span className="text-xs uppercase font-bold tracking-wider text-slate-500">Contacts</span>
                       <span className="text-slate-300">|</span>
+                      {member.phone && (
+                        <>
+                          <Phone className="w-4 h-4 text-[#00509E] shrink-0" />
+                          <a href={`tel:${member.phone.replace(/[^+\d]/g, '')}`} className="hover:underline text-slate-700 hover:text-[#00509E]">
+                            {member.phone}
+                          </a>
+                          <span className="text-slate-300">|</span>
+                        </>
+                      )}
                       <Mail className="w-4 h-4 text-[#00509E] shrink-0" />
                       <a href={`mailto:${member.email}`} className="hover:underline text-slate-700 hover:text-[#00509E]">
                         {member.email}
